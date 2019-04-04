@@ -19,7 +19,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     CDLoginVC *controller = [[CDLoginVC alloc] init];
     CDNaviViewController *nav = [[CDNaviViewController alloc] initWithRootViewController:controller];
     self.window.rootViewController = nav;

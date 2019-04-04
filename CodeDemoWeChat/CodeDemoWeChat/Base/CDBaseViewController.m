@@ -7,6 +7,7 @@
 //
 
 #import "CDBaseViewController.h"
+
 static NSInteger offset = 10;
 @interface CDBaseViewController ()<UIGestureRecognizerDelegate>
 @property (nonatomic, strong, readwrite) UIWindow *keyWindow;
@@ -40,7 +41,7 @@ static NSInteger offset = 10;
     UIButton *leftBtn = [UIButton buttonWithType:UIButtonTypeSystem];
     leftBtn.frame = CGRectMake(0, 0, 44, 44);
     leftBtn.contentHorizontalAlignment = UIControlContentHorizontalAlignmentLeft;
-    [leftBtn setImage:kImgName(@"back_white") forState:UIControlStateNormal];
+    [leftBtn setImage:kImgName(@"nav_back") forState:UIControlStateNormal];
     __weak typeof(self) weakSelf = self;
     leftBtn.rac_command = [[RACCommand alloc] initWithSignalBlock:^RACSignal *(id input) {
         if (buttonAction) {

@@ -1,5 +1,5 @@
 //
-//  TabbarViewController.h
+//  CDTabbarViewController.h
 //  CodeDemoWeChat
 //
 //  Created by wangJS on 2019/4/4.
@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface TabbarViewController : UITabBarController
+@interface CDTabbarViewController : UITabBarController
 
 @end
 

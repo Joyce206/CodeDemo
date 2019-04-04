@@ -36,7 +36,8 @@
 #define HEXColor(c)         [UIColor colorWithRed:((c>>16)&0xFF)/255.0 green:((c>>8)&0xFF)/255.0 blue:(c&0xFF)/255.0 alpha:1.0]
 
 #define Nav_BG_Color        RGB(255, 255, 255)
-#define App_BG_Color        RGB(175,238,238)
+#define Main_BG_Color        RGB(255, 255, 255)
+#define APP_Main_Color      RGB(64,224,208)
 #define App_Line_Color      RGB(225, 225, 225)
 #define App_View_BG_Color   RGB(245, 245, 245)
 #define Import_Text_Color   RGB(65, 65, 65)
@@ -46,7 +47,6 @@
 #define kGreen_Color        RGB(82, 208, 110)
 
 #define Nav_Title_Color     RGB(0, 0, 0)
-#define APP_Main_Color      RGB(255,234,0)
 #define Text_Sub_Color      RGB(136, 136, 136)
 #define APP_Button_Color    RGB(255,180,0)
 #define APP_BtnMain_Color    RGB(250, 225, 76)

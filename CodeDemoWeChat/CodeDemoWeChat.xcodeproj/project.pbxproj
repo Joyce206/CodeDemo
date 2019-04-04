@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9513F4722255ABD4006A1D90 /* CDTabbarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9513F4712255ABD4006A1D90 /* CDTabbarViewController.m */; };
 		95F271612255908900E0216B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 95F271602255908900E0216B /* AppDelegate.m */; };
 		95F271642255908900E0216B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95F271632255908900E0216B /* ViewController.m */; };
 		95F271692255908A00E0216B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95F271682255908A00E0216B /* Assets.xcassets */; };
@@ -14,7 +15,6 @@
 		95F2716F2255908A00E0216B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 95F2716E2255908A00E0216B /* main.m */; };
 		95F271792255908A00E0216B /* CodeDemoWeChatUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 95F271782255908A00E0216B /* CodeDemoWeChatUITests.m */; };
 		95F2719522559A9E00E0216B /* NSString+AllCategories.m in Sources */ = {isa = PBXBuildFile; fileRef = 95F2719422559A9E00E0216B /* NSString+AllCategories.m */; };
-		95F2719B22559C8800E0216B /* TabbarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95F2719A22559C8800E0216B /* TabbarViewController.m */; };
 		95F271AA22559CEB00E0216B /* CDBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95F271A922559CEB00E0216B /* CDBaseViewController.m */; };
 		95F271AD22559D2D00E0216B /* CDMineVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 95F271AC22559D2D00E0216B /* CDMineVC.m */; };
 		95F271B022559D5400E0216B /* CDFindVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 95F271AF22559D5400E0216B /* CDFindVC.m */; };
@@ -24,6 +24,8 @@
 		95F271BE22559EB300E0216B /* CDNaviViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95F271BD22559EB300E0216B /* CDNaviViewController.m */; };
 		95F271C122559EE600E0216B /* UIViewController+CDNavigationExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 95F271C022559EE600E0216B /* UIViewController+CDNavigationExtension.m */; };
 		95F271C52255A03E00E0216B /* UIImage+CDAllCategories.m in Sources */ = {isa = PBXBuildFile; fileRef = 95F271C42255A03E00E0216B /* UIImage+CDAllCategories.m */; };
+		95F271CB2255A17700E0216B /* CDBaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 95F271CA2255A17700E0216B /* CDBaseTableViewCell.m */; };
+		95F271CE2255A1BE00E0216B /* CDBaseTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 95F271CD2255A1BE00E0216B /* CDBaseTableView.m */; };
 		CBCEFD51D5C299ECCF740FF7 /* libPods-CodeDemoWeChat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 317F141E784F8F6DC9DC58B7 /* libPods-CodeDemoWeChat.a */; };
 /* End PBXBuildFile section */
 
@@ -40,6 +42,9 @@
 /* Begin PBXFileReference section */
 		128910ECB9C921D57CB725EA /* Pods-CodeDemoWeChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodeDemoWeChat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CodeDemoWeChat/Pods-CodeDemoWeChat.debug.xcconfig"; sourceTree = "<group>"; };
 		317F141E784F8F6DC9DC58B7 /* libPods-CodeDemoWeChat.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CodeDemoWeChat.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9513F46F2255AAFA006A1D90 /* CDDiyNames.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CDDiyNames.h; sourceTree = "<group>"; };
+		9513F4702255ABD4006A1D90 /* CDTabbarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CDTabbarViewController.h; sourceTree = "<group>"; };
+		9513F4712255ABD4006A1D90 /* CDTabbarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CDTabbarViewController.m; sourceTree = "<group>"; };
 		95F2715C2255908900E0216B /* CodeDemoWeChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodeDemoWeChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		95F2715F2255908900E0216B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		95F271602255908900E0216B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -56,8 +61,6 @@
 		95F271902255986300E0216B /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		95F2719322559A9E00E0216B /* NSString+AllCategories.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+AllCategories.h"; sourceTree = "<group>"; };
 		95F2719422559A9E00E0216B /* NSString+AllCategories.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+AllCategories.m"; sourceTree = "<group>"; };
-		95F2719922559C8800E0216B /* TabbarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TabbarViewController.h; sourceTree = "<group>"; };
-		95F2719A22559C8800E0216B /* TabbarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TabbarViewController.m; sourceTree = "<group>"; };
 		95F271A822559CEB00E0216B /* CDBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CDBaseViewController.h; sourceTree = "<group>"; };
 		95F271A922559CEB00E0216B /* CDBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CDBaseViewController.m; sourceTree = "<group>"; };
 		95F271AB22559D2D00E0216B /* CDMineVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CDMineVC.h; sourceTree = "<group>"; };
@@ -76,6 +79,10 @@
 		95F271C022559EE600E0216B /* UIViewController+CDNavigationExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+CDNavigationExtension.m"; sourceTree = "<group>"; };
 		95F271C32255A03E00E0216B /* UIImage+CDAllCategories.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+CDAllCategories.h"; sourceTree = "<group>"; };
 		95F271C42255A03E00E0216B /* UIImage+CDAllCategories.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+CDAllCategories.m"; sourceTree = "<group>"; };
+		95F271C92255A17700E0216B /* CDBaseTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CDBaseTableViewCell.h; sourceTree = "<group>"; };
+		95F271CA2255A17700E0216B /* CDBaseTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CDBaseTableViewCell.m; sourceTree = "<group>"; };
+		95F271CC2255A1BE00E0216B /* CDBaseTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CDBaseTableView.h; sourceTree = "<group>"; };
+		95F271CD2255A1BE00E0216B /* CDBaseTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CDBaseTableView.m; sourceTree = "<group>"; };
 		EEECB8F4C67DB462CFE27137 /* Pods-CodeDemoWeChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodeDemoWeChat.release.xcconfig"; path = "Pods/Target Support Files/Pods-CodeDemoWeChat/Pods-CodeDemoWeChat.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -172,10 +179,10 @@
 		95F271852255973E00E0216B /* tab */ = {
 			isa = PBXGroup;
 			children = (
-				95F2719922559C8800E0216B /* TabbarViewController.h */,
-				95F2719A22559C8800E0216B /* TabbarViewController.m */,
 				95F271BC22559EB300E0216B /* CDNaviViewController.h */,
 				95F271BD22559EB300E0216B /* CDNaviViewController.m */,
+				9513F4702255ABD4006A1D90 /* CDTabbarViewController.h */,
+				9513F4712255ABD4006A1D90 /* CDTabbarViewController.m */,
 			);
 			path = tab;
 			sourceTree = "<group>";
@@ -221,6 +228,10 @@
 			children = (
 				95F271A822559CEB00E0216B /* CDBaseViewController.h */,
 				95F271A922559CEB00E0216B /* CDBaseViewController.m */,
+				95F271CC2255A1BE00E0216B /* CDBaseTableView.h */,
+				95F271CD2255A1BE00E0216B /* CDBaseTableView.m */,
+				95F271C92255A17700E0216B /* CDBaseTableViewCell.h */,
+				95F271CA2255A17700E0216B /* CDBaseTableViewCell.m */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -229,6 +240,7 @@
 			isa = PBXGroup;
 			children = (
 				95F2718F2255985300E0216B /* DefaultDefinitions.h */,
+				9513F46F2255AAFA006A1D90 /* CDDiyNames.h */,
 			);
 			path = import;
 			sourceTree = "<group>";
@@ -449,16 +461,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				95F271642255908900E0216B /* ViewController.m in Sources */,
+				95F271CE2255A1BE00E0216B /* CDBaseTableView.m in Sources */,
 				95F271B322559D6B00E0216B /* CDConnectVC.m in Sources */,
 				95F271C52255A03E00E0216B /* UIImage+CDAllCategories.m in Sources */,
 				95F271B922559D9300E0216B /* CDLoginVC.m in Sources */,
 				95F271AD22559D2D00E0216B /* CDMineVC.m in Sources */,
+				95F271CB2255A17700E0216B /* CDBaseTableViewCell.m in Sources */,
 				95F2716F2255908A00E0216B /* main.m in Sources */,
 				95F271BE22559EB300E0216B /* CDNaviViewController.m in Sources */,
 				95F271C122559EE600E0216B /* UIViewController+CDNavigationExtension.m in Sources */,
+				9513F4722255ABD4006A1D90 /* CDTabbarViewController.m in Sources */,
 				95F271AA22559CEB00E0216B /* CDBaseViewController.m in Sources */,
 				95F271B022559D5400E0216B /* CDFindVC.m in Sources */,
-				95F2719B22559C8800E0216B /* TabbarViewController.m in Sources */,
 				95F2719522559A9E00E0216B /* NSString+AllCategories.m in Sources */,
 				95F271B622559D7F00E0216B /* CDMessageVC.m in Sources */,
 				95F271612255908900E0216B /* AppDelegate.m in Sources */,
@@ -546,7 +560,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -599,7 +613,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
