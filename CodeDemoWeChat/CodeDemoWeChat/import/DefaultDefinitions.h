@@ -50,6 +50,7 @@
 #define Text_Sub_Color      RGB(136, 136, 136)
 #define APP_Button_Color    RGB(255,180,0)
 #define APP_BtnMain_Color    RGB(250, 225, 76)
+#define Table_footer_Color    RGB(220,220,220)
 
 
 //system Version
