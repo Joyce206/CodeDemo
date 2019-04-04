@@ -1,0 +1,20 @@
+target 'CodeDemoWeChat' do
+
+inhibit_all_warnings!
+
+platform :ios, '8.0'
+        
+    pod 'Masonry'
+    pod 'ReactiveCocoa', '~> 2.5'
+    pod 'AFNetworking'
+    pod 'MJExtension'
+    pod 'MBProgressHUD'
+    pod 'YYKit'
+    pod 'TZImagePickerController'
+    pod 'SDWebImage'
+    pod 'IQKeyboardManager'
+    pod 'FSScrollContentView'
+    pod 'SDCycleScrollView'
+    pod 'MJRefresh'
+    pod 'SDWebImage/GIF'    
+end
