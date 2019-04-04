@@ -7,7 +7,8 @@
 //
 
 #import "AppDelegate.h"
-#import "ViewController.h"
+#import "CDLoginVC.h"
+#import "CDNaviViewController.h"
 
 @interface AppDelegate ()
 
@@ -19,11 +20,11 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
-    ViewController *controller = [[ViewController alloc] init];
-    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:controller];
-    self.window = [[UIWindow alloc] initWithFrame: [UIScreen mainScreen].bounds];
-    self.window.backgroundColor = [UIColor whiteColor];
+    CDLoginVC *controller = [[CDLoginVC alloc] init];
+    CDNaviViewController *nav = [[CDNaviViewController alloc] initWithRootViewController:controller];
     self.window.rootViewController = nav;
+    [self.window makeKeyAndVisible];
+
     return YES;
 }
 

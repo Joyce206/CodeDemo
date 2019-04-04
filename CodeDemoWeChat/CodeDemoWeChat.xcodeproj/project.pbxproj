@@ -13,6 +13,17 @@
 		95F2716C2255908A00E0216B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95F2716A2255908A00E0216B /* LaunchScreen.storyboard */; };
 		95F2716F2255908A00E0216B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 95F2716E2255908A00E0216B /* main.m */; };
 		95F271792255908A00E0216B /* CodeDemoWeChatUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 95F271782255908A00E0216B /* CodeDemoWeChatUITests.m */; };
+		95F2719522559A9E00E0216B /* NSString+AllCategories.m in Sources */ = {isa = PBXBuildFile; fileRef = 95F2719422559A9E00E0216B /* NSString+AllCategories.m */; };
+		95F2719B22559C8800E0216B /* TabbarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95F2719A22559C8800E0216B /* TabbarViewController.m */; };
+		95F271AA22559CEB00E0216B /* CDBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95F271A922559CEB00E0216B /* CDBaseViewController.m */; };
+		95F271AD22559D2D00E0216B /* CDMineVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 95F271AC22559D2D00E0216B /* CDMineVC.m */; };
+		95F271B022559D5400E0216B /* CDFindVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 95F271AF22559D5400E0216B /* CDFindVC.m */; };
+		95F271B322559D6B00E0216B /* CDConnectVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 95F271B222559D6B00E0216B /* CDConnectVC.m */; };
+		95F271B622559D7F00E0216B /* CDMessageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 95F271B522559D7F00E0216B /* CDMessageVC.m */; };
+		95F271B922559D9300E0216B /* CDLoginVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 95F271B822559D9300E0216B /* CDLoginVC.m */; };
+		95F271BE22559EB300E0216B /* CDNaviViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95F271BD22559EB300E0216B /* CDNaviViewController.m */; };
+		95F271C122559EE600E0216B /* UIViewController+CDNavigationExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 95F271C022559EE600E0216B /* UIViewController+CDNavigationExtension.m */; };
+		95F271C52255A03E00E0216B /* UIImage+CDAllCategories.m in Sources */ = {isa = PBXBuildFile; fileRef = 95F271C42255A03E00E0216B /* UIImage+CDAllCategories.m */; };
 		CBCEFD51D5C299ECCF740FF7 /* libPods-CodeDemoWeChat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 317F141E784F8F6DC9DC58B7 /* libPods-CodeDemoWeChat.a */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +52,30 @@
 		95F271742255908A00E0216B /* CodeDemoWeChatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CodeDemoWeChatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		95F271782255908A00E0216B /* CodeDemoWeChatUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CodeDemoWeChatUITests.m; sourceTree = "<group>"; };
 		95F2717A2255908A00E0216B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		95F2718F2255985300E0216B /* DefaultDefinitions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DefaultDefinitions.h; sourceTree = "<group>"; };
+		95F271902255986300E0216B /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		95F2719322559A9E00E0216B /* NSString+AllCategories.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+AllCategories.h"; sourceTree = "<group>"; };
+		95F2719422559A9E00E0216B /* NSString+AllCategories.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+AllCategories.m"; sourceTree = "<group>"; };
+		95F2719922559C8800E0216B /* TabbarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TabbarViewController.h; sourceTree = "<group>"; };
+		95F2719A22559C8800E0216B /* TabbarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TabbarViewController.m; sourceTree = "<group>"; };
+		95F271A822559CEB00E0216B /* CDBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CDBaseViewController.h; sourceTree = "<group>"; };
+		95F271A922559CEB00E0216B /* CDBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CDBaseViewController.m; sourceTree = "<group>"; };
+		95F271AB22559D2D00E0216B /* CDMineVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CDMineVC.h; sourceTree = "<group>"; };
+		95F271AC22559D2D00E0216B /* CDMineVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CDMineVC.m; sourceTree = "<group>"; };
+		95F271AE22559D5400E0216B /* CDFindVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CDFindVC.h; sourceTree = "<group>"; };
+		95F271AF22559D5400E0216B /* CDFindVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CDFindVC.m; sourceTree = "<group>"; };
+		95F271B122559D6A00E0216B /* CDConnectVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CDConnectVC.h; sourceTree = "<group>"; };
+		95F271B222559D6B00E0216B /* CDConnectVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CDConnectVC.m; sourceTree = "<group>"; };
+		95F271B422559D7F00E0216B /* CDMessageVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CDMessageVC.h; sourceTree = "<group>"; };
+		95F271B522559D7F00E0216B /* CDMessageVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CDMessageVC.m; sourceTree = "<group>"; };
+		95F271B722559D9300E0216B /* CDLoginVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CDLoginVC.h; sourceTree = "<group>"; };
+		95F271B822559D9300E0216B /* CDLoginVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CDLoginVC.m; sourceTree = "<group>"; };
+		95F271BC22559EB300E0216B /* CDNaviViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CDNaviViewController.h; sourceTree = "<group>"; };
+		95F271BD22559EB300E0216B /* CDNaviViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CDNaviViewController.m; sourceTree = "<group>"; };
+		95F271BF22559EE600E0216B /* UIViewController+CDNavigationExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+CDNavigationExtension.h"; sourceTree = "<group>"; };
+		95F271C022559EE600E0216B /* UIViewController+CDNavigationExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+CDNavigationExtension.m"; sourceTree = "<group>"; };
+		95F271C32255A03E00E0216B /* UIImage+CDAllCategories.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+CDAllCategories.h"; sourceTree = "<group>"; };
+		95F271C42255A03E00E0216B /* UIImage+CDAllCategories.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+CDAllCategories.m"; sourceTree = "<group>"; };
 		EEECB8F4C67DB462CFE27137 /* Pods-CodeDemoWeChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodeDemoWeChat.release.xcconfig"; path = "Pods/Target Support Files/Pods-CodeDemoWeChat/Pods-CodeDemoWeChat.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -86,11 +121,15 @@
 		95F2715E2255908900E0216B /* CodeDemoWeChat */ = {
 			isa = PBXGroup;
 			children = (
+				95F2719122559A6E00E0216B /* Helpers */,
+				95F2718E2255983A00E0216B /* import */,
+				95F2718A2255979000E0216B /* Base */,
 				95F271832255958D00E0216B /* classes */,
 				95F2715F2255908900E0216B /* AppDelegate.h */,
 				95F271602255908900E0216B /* AppDelegate.m */,
 				95F271622255908900E0216B /* ViewController.h */,
 				95F271632255908900E0216B /* ViewController.m */,
+				95F271902255986300E0216B /* PrefixHeader.pch */,
 				95F271682255908A00E0216B /* Assets.xcassets */,
 				95F2716A2255908A00E0216B /* LaunchScreen.storyboard */,
 				95F2716D2255908A00E0216B /* Info.plist */,
@@ -111,8 +150,132 @@
 		95F271832255958D00E0216B /* classes */ = {
 			isa = PBXGroup;
 			children = (
+				95F271892255976100E0216B /* mine */,
+				95F271882255975B00E0216B /* find */,
+				95F271872255975200E0216B /* connect */,
+				95F271862255974300E0216B /* message */,
+				95F271852255973E00E0216B /* tab */,
+				95F271842255973700E0216B /* login */,
 			);
 			path = classes;
+			sourceTree = "<group>";
+		};
+		95F271842255973700E0216B /* login */ = {
+			isa = PBXGroup;
+			children = (
+				95F271B722559D9300E0216B /* CDLoginVC.h */,
+				95F271B822559D9300E0216B /* CDLoginVC.m */,
+			);
+			path = login;
+			sourceTree = "<group>";
+		};
+		95F271852255973E00E0216B /* tab */ = {
+			isa = PBXGroup;
+			children = (
+				95F2719922559C8800E0216B /* TabbarViewController.h */,
+				95F2719A22559C8800E0216B /* TabbarViewController.m */,
+				95F271BC22559EB300E0216B /* CDNaviViewController.h */,
+				95F271BD22559EB300E0216B /* CDNaviViewController.m */,
+			);
+			path = tab;
+			sourceTree = "<group>";
+		};
+		95F271862255974300E0216B /* message */ = {
+			isa = PBXGroup;
+			children = (
+				95F271B422559D7F00E0216B /* CDMessageVC.h */,
+				95F271B522559D7F00E0216B /* CDMessageVC.m */,
+			);
+			path = message;
+			sourceTree = "<group>";
+		};
+		95F271872255975200E0216B /* connect */ = {
+			isa = PBXGroup;
+			children = (
+				95F271B122559D6A00E0216B /* CDConnectVC.h */,
+				95F271B222559D6B00E0216B /* CDConnectVC.m */,
+			);
+			path = connect;
+			sourceTree = "<group>";
+		};
+		95F271882255975B00E0216B /* find */ = {
+			isa = PBXGroup;
+			children = (
+				95F271AE22559D5400E0216B /* CDFindVC.h */,
+				95F271AF22559D5400E0216B /* CDFindVC.m */,
+			);
+			path = find;
+			sourceTree = "<group>";
+		};
+		95F271892255976100E0216B /* mine */ = {
+			isa = PBXGroup;
+			children = (
+				95F271AB22559D2D00E0216B /* CDMineVC.h */,
+				95F271AC22559D2D00E0216B /* CDMineVC.m */,
+			);
+			path = mine;
+			sourceTree = "<group>";
+		};
+		95F2718A2255979000E0216B /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				95F271A822559CEB00E0216B /* CDBaseViewController.h */,
+				95F271A922559CEB00E0216B /* CDBaseViewController.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		95F2718E2255983A00E0216B /* import */ = {
+			isa = PBXGroup;
+			children = (
+				95F2718F2255985300E0216B /* DefaultDefinitions.h */,
+			);
+			path = import;
+			sourceTree = "<group>";
+		};
+		95F2719122559A6E00E0216B /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				95F2719222559A7700E0216B /* Category */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		95F2719222559A7700E0216B /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				95F271C22255A03000E0216B /* UIImage */,
+				95F271BB22559E8400E0216B /* UIViewController */,
+				95F271BA22559E7700E0216B /* NSString */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		95F271BA22559E7700E0216B /* NSString */ = {
+			isa = PBXGroup;
+			children = (
+				95F2719322559A9E00E0216B /* NSString+AllCategories.h */,
+				95F2719422559A9E00E0216B /* NSString+AllCategories.m */,
+			);
+			name = NSString;
+			sourceTree = "<group>";
+		};
+		95F271BB22559E8400E0216B /* UIViewController */ = {
+			isa = PBXGroup;
+			children = (
+				95F271BF22559EE600E0216B /* UIViewController+CDNavigationExtension.h */,
+				95F271C022559EE600E0216B /* UIViewController+CDNavigationExtension.m */,
+			);
+			name = UIViewController;
+			sourceTree = "<group>";
+		};
+		95F271C22255A03000E0216B /* UIImage */ = {
+			isa = PBXGroup;
+			children = (
+				95F271C32255A03E00E0216B /* UIImage+CDAllCategories.h */,
+				95F271C42255A03E00E0216B /* UIImage+CDAllCategories.m */,
+			);
+			name = UIImage;
 			sourceTree = "<group>";
 		};
 		B9EABFC81AE7C288745B3B9D /* Frameworks */ = {
@@ -178,6 +341,7 @@
 		95F271542255908900E0216B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = CD;
 				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = Joyce;
 				TargetAttributes = {
@@ -285,7 +449,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				95F271642255908900E0216B /* ViewController.m in Sources */,
+				95F271B322559D6B00E0216B /* CDConnectVC.m in Sources */,
+				95F271C52255A03E00E0216B /* UIImage+CDAllCategories.m in Sources */,
+				95F271B922559D9300E0216B /* CDLoginVC.m in Sources */,
+				95F271AD22559D2D00E0216B /* CDMineVC.m in Sources */,
 				95F2716F2255908A00E0216B /* main.m in Sources */,
+				95F271BE22559EB300E0216B /* CDNaviViewController.m in Sources */,
+				95F271C122559EE600E0216B /* UIViewController+CDNavigationExtension.m in Sources */,
+				95F271AA22559CEB00E0216B /* CDBaseViewController.m in Sources */,
+				95F271B022559D5400E0216B /* CDFindVC.m in Sources */,
+				95F2719B22559C8800E0216B /* TabbarViewController.m in Sources */,
+				95F2719522559A9E00E0216B /* NSString+AllCategories.m in Sources */,
+				95F271B622559D7F00E0216B /* CDMessageVC.m in Sources */,
 				95F271612255908900E0216B /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -439,6 +614,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C7N4XVPZ37;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/CodeDemoWeChat/PrefixHeader.pch";
 				INFOPLIST_FILE = CodeDemoWeChat/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -458,6 +634,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C7N4XVPZ37;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/CodeDemoWeChat/PrefixHeader.pch";
 				INFOPLIST_FILE = CodeDemoWeChat/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
