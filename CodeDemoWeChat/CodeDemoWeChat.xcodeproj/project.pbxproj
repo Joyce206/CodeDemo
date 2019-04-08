@@ -40,6 +40,7 @@
 		95F271CB2255A17700E0216B /* CDBaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 95F271CA2255A17700E0216B /* CDBaseTableViewCell.m */; };
 		95F271CE2255A1BE00E0216B /* CDBaseTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 95F271CD2255A1BE00E0216B /* CDBaseTableView.m */; };
 		CBCEFD51D5C299ECCF740FF7 /* libPods-CodeDemoWeChat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 317F141E784F8F6DC9DC58B7 /* libPods-CodeDemoWeChat.a */; };
+		E95D708A225B8DD00018C048 /* CDSettingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E95D7089225B8DD00018C048 /* CDSettingVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -123,6 +124,8 @@
 		95F271CA2255A17700E0216B /* CDBaseTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CDBaseTableViewCell.m; sourceTree = "<group>"; };
 		95F271CC2255A1BE00E0216B /* CDBaseTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CDBaseTableView.h; sourceTree = "<group>"; };
 		95F271CD2255A1BE00E0216B /* CDBaseTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CDBaseTableView.m; sourceTree = "<group>"; };
+		E95D7088225B8DD00018C048 /* CDSettingVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CDSettingVC.h; sourceTree = "<group>"; };
+		E95D7089225B8DD00018C048 /* CDSettingVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CDSettingVC.m; sourceTree = "<group>"; };
 		EEECB8F4C67DB462CFE27137 /* Pods-CodeDemoWeChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodeDemoWeChat.release.xcconfig"; path = "Pods/Target Support Files/Pods-CodeDemoWeChat/Pods-CodeDemoWeChat.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -167,6 +170,7 @@
 		9513F9AF225AD42D00C53CA6 /* controllers */ = {
 			isa = PBXGroup;
 			children = (
+				E95D7087225B8DB80018C048 /* setting */,
 				9513F9DB225AF59B00C53CA6 /* address */,
 				9513F9C3225AEAAC00C53CA6 /* reset */,
 				9513F9BF225AEA7F00C53CA6 /* userInfo */,
@@ -445,6 +449,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		E95D7087225B8DB80018C048 /* setting */ = {
+			isa = PBXGroup;
+			children = (
+				E95D7088225B8DD00018C048 /* CDSettingVC.h */,
+				E95D7089225B8DD00018C048 /* CDSettingVC.m */,
+			);
+			name = setting;
+			sourceTree = "<group>";
+		};
 		EEFB0F76FE86DCAED584ADAB /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -635,6 +648,7 @@
 				9513F9CC225AEAF700C53CA6 /* CDResetQRCodeVC.m in Sources */,
 				9513F9C6225AEAC600C53CA6 /* CDResetHeaderVC.m in Sources */,
 				95F271612255908900E0216B /* AppDelegate.m in Sources */,
+				E95D708A225B8DD00018C048 /* CDSettingVC.m in Sources */,
 				9513F9D8225AF53C00C53CA6 /* CDRestAutographVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

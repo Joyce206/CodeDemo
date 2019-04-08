@@ -1,24 +1,21 @@
+
 //
-//  CDMineVC.m
+//  CDSettingVC.m
 //  CodeDemoWeChat
 //
-//  Created by wangJS on 2019/4/4.
+//  Created by Joyce on 4/8/19.
 //  Copyright © 2019 Joyce. All rights reserved.
 //
 
-#import "CDMineVC.h"
-#import "CDMineIconHeaderView.h"
-#import "CDUserInfoVC.h"
 #import "CDSettingVC.h"
 
-
-@interface CDMineVC ()<UITableViewDelegate, UITableViewDataSource>
+@interface CDSettingVC ()<UITableViewDelegate, UITableViewDataSource>
 @property (nonatomic, strong) CDBaseTableView *tableView;
 @property (nonatomic, strong) CDUserInfoModel *userInfo;
 
 @end
 
-@implementation CDMineVC
+@implementation CDSettingVC
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -28,10 +25,10 @@
 - (void)setupUI {
     [self.navigationController setNavigationBarHidden:NO animated:YES];
     
-    self.title = @"设置";
-
+    self.title = @"登录";
+    
     self.userInfo = [CDUserInfoModel getUserInfo] ;
-
+    
     [self refreshUI];
     [self refreshUIConstraints];
     [self.tableView reloadData];
@@ -51,27 +48,29 @@
         }
     }];
 }
-- (CDBaseTableView *)tableView {
+- ( CDBaseTableView *)tableView {
     if (!_tableView) {
         _tableView = [[CDBaseTableView alloc] initWithFrame:CGRectZero style:UITableViewStyleGrouped];
         _tableView.delegate = self;
         _tableView.dataSource = self;
         _tableView.backgroundColor = Table_footer_Color;
         _tableView.bounces = NO;
-//        _tableView.allowsSelection = NO;
+        //        _tableView.allowsSelection = NO;
         [_tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"UITableViewCell"];
-        [_tableView registerClass:NSClassFromString(@"CDMineIconHeaderView") forHeaderFooterViewReuseIdentifier:@"CDMineIconHeaderView"];
     }
     return _tableView;
 }
 #pragma mark  UI
 #pragma mark - UITableViewDelegate, UITableViewDataSource
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 3;
+    return 6;
 }
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     if (section == 1) {
-        return 4;
+        return 3;
+    }
+    if (section == 2) {
+        return 2;
     }
     return 1;
 }
@@ -79,23 +78,7 @@
     return 60;
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
-    if (section == 0) {
-        return 150 + NavHeight;
-    }
     return 0.000001;
-}
-- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
-    if (section == 0) {
-        __weak __typeof(self) weakSelf= self;
-        
-        CDMineIconHeaderView *headerView = (CDMineIconHeaderView *)[tableView dequeueReusableHeaderFooterViewWithIdentifier:@"CDMineIconHeaderView"];
-        headerView.userInfo = self.userInfo;
-        headerView.clickBlock = ^(NSInteger index) {
-            [weakSelf.navigationController pushViewController:[[CDUserInfoVC alloc] init] animated:YES];
-        };
-        return headerView;
-    }
-    return nil;
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section {
     return 10;
@@ -125,26 +108,22 @@
         }
     }
     
-    UIImageView *iconImg = [[UIImageView alloc] init];
     UILabel *tileLab = [[UILabel alloc] init];
+    
     UIImageView *rightImg = [[UIImageView alloc] init];
     rightImg.image = [UIImage imageNamed:@"more_default"];
+    
     UIView *lineView = [[UIView alloc] init];
     lineView.backgroundColor = App_Line_Color;
     
-    [cell.contentView addSubview:iconImg];
     [cell.contentView addSubview:tileLab];
     [cell.contentView addSubview:rightImg];
     [cell.contentView addSubview:lineView];
     lineView.hidden = YES;
-    [iconImg mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.size.mas_equalTo(CGSizeMake(30, 30));
-        make.centerY.mas_equalTo(cell.contentView);
-        make.left.mas_equalTo(15);
-    }];
+    
     [tileLab mas_makeConstraints:^(MASConstraintMaker *make) {
         make.centerY.mas_equalTo(cell.contentView);
-        make.left.mas_equalTo(70);
+        make.left.mas_equalTo(15);
     }];
     [rightImg mas_makeConstraints:^(MASConstraintMaker *make) {
         make.size.mas_equalTo(CGSizeMake(30, 30));
@@ -154,16 +133,16 @@
     [lineView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.height.mas_equalTo(1);
         make.right.bottom.mas_equalTo(cell.contentView);
-        make.left.mas_equalTo(70);
+        make.left.mas_equalTo(15);
     }];
-    NSArray *leftImfArray = @[@[@"mine_pay"] , @[@"mine_collection",@"mine_album",@"mine_cards",@"mine_faces"] , @[@"mine_setting"]];
-    NSArray *titleArray = @[@[@"支付"] , @[@"收藏",@"相册",@"卡包",@"表情"] , @[@"设置"]];
-    
-    NSString *imageName = [NSString stringWithFormat:@"%@",leftImfArray[indexPath.section][indexPath.row]];
+    NSArray *titleArray = @[@[@"账号与安全"] , @[@"新消息通知",@"隐私",@"通用"] ,@[@"帮助与反馈",@"关于微信"], @[@"插件"], @[@"切换账号"], @[@"退出登录"]];
     NSString *titleStr = [NSString stringWithFormat:@"%@",titleArray[indexPath.section][indexPath.row]];
-    iconImg.image = [UIImage imageNamed:imageName];
+
     tileLab.text =  titleStr;
-    if (indexPath.section == 1 && indexPath.row < 3) {
+    if (indexPath.section == 1 && indexPath.row < 2) {
+        lineView.hidden = NO;
+    }
+    if (indexPath.section == 2 && indexPath.row < 1) {
         lineView.hidden = NO;
     }
     return cell;
@@ -179,7 +158,7 @@
 
 #pragma mark  - action
 - (void)btnLoginClick:(UIButton *)sender {
-//    AppDelegate *app = (AppDelegate *)[UIApplication sharedApplication].delegate;
-//    app.window.rootViewController = [[CDNaviViewController alloc] initWithRootViewController:[[CDTabbarViewController alloc] init]];
+    //    AppDelegate *app = (AppDelegate *)[UIApplication sharedApplication].delegate;
+    //    app.window.rootViewController = [[CDNaviViewController alloc] initWithRootViewController:[[CDTabbarViewController alloc] init]];
 }
 @end
