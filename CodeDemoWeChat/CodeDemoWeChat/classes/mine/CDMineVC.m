@@ -7,9 +7,11 @@
 //
 
 #import "CDMineVC.h"
+#import "CDMineIconHeaderView.h"
 
 @interface CDMineVC ()<UITableViewDelegate, UITableViewDataSource>
 @property (nonatomic, strong) CDBaseTableView *tableView;
+@property (nonatomic, strong) CDUserInfoModel *userInfo;
 
 @end
 
@@ -22,10 +24,11 @@
 }
 #pragma mark - UI
 - (void)setupUI {
-    [self.navigationController setNavigationBarHidden:NO animated:YES];
+    [self.navigationController setNavigationBarHidden:YES animated:YES];
     
     self.title = @"登录";
-    
+    self.userInfo = [[CDUserInfoManager sharedInstance] userInfo];
+
     [self refreshUI];
     [self refreshUIConstraints];
     [self.tableView reloadData];
@@ -54,6 +57,7 @@
         _tableView.bounces = NO;
         _tableView.allowsSelection = NO;
         [_tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"UITableViewCell"];
+        [_tableView registerClass:NSClassFromString(@"CDMineIconHeaderView") forHeaderFooterViewReuseIdentifier:@"CDMineIconHeaderView"];
     }
     return _tableView;
 }
@@ -70,6 +74,25 @@
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     return 60;
+}
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
+    if (section == 0) {
+        return 150 + NavHeight;
+    }
+    return 0.000001;
+}
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
+    if (section == 0) {
+        __weak __typeof(self) weakSelf= self;
+        
+        CDMineIconHeaderView *headerView = (CDMineIconHeaderView *)[tableView dequeueReusableHeaderFooterViewWithIdentifier:@"CDMineIconHeaderView"];
+        headerView.userInfo = self.userInfo;
+        headerView.clickBlock = ^(NSInteger index) {
+            
+        };
+        return headerView;
+    }
+    return nil;
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section {
     return 10;

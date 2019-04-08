@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		9513F4722255ABD4006A1D90 /* CDTabbarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9513F4712255ABD4006A1D90 /* CDTabbarViewController.m */; };
+		9513F9B4225AD48200C53CA6 /* CDMineIconHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9513F9B3225AD48200C53CA6 /* CDMineIconHeaderView.m */; };
+		9513F9B7225ADA3A00C53CA6 /* CDUserInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9513F9B6225ADA3A00C53CA6 /* CDUserInfoModel.m */; };
+		9513F9BB225ADBE400C53CA6 /* CDUserInfoManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9513F9BA225ADBE400C53CA6 /* CDUserInfoManager.m */; };
 		95F271612255908900E0216B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 95F271602255908900E0216B /* AppDelegate.m */; };
 		95F271642255908900E0216B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95F271632255908900E0216B /* ViewController.m */; };
 		95F271692255908A00E0216B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95F271682255908A00E0216B /* Assets.xcassets */; };
@@ -45,6 +48,13 @@
 		9513F46F2255AAFA006A1D90 /* CDDiyNames.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CDDiyNames.h; sourceTree = "<group>"; };
 		9513F4702255ABD4006A1D90 /* CDTabbarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CDTabbarViewController.h; sourceTree = "<group>"; };
 		9513F4712255ABD4006A1D90 /* CDTabbarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CDTabbarViewController.m; sourceTree = "<group>"; };
+		9513F9B2225AD48200C53CA6 /* CDMineIconHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CDMineIconHeaderView.h; sourceTree = "<group>"; };
+		9513F9B3225AD48200C53CA6 /* CDMineIconHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CDMineIconHeaderView.m; sourceTree = "<group>"; };
+		9513F9B5225ADA3A00C53CA6 /* CDUserInfoModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CDUserInfoModel.h; sourceTree = "<group>"; };
+		9513F9B6225ADA3A00C53CA6 /* CDUserInfoModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CDUserInfoModel.m; sourceTree = "<group>"; };
+		9513F9B8225ADA4700C53CA6 /* CDModels.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CDModels.h; sourceTree = "<group>"; };
+		9513F9B9225ADBE400C53CA6 /* CDUserInfoManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CDUserInfoManager.h; sourceTree = "<group>"; };
+		9513F9BA225ADBE400C53CA6 /* CDUserInfoManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CDUserInfoManager.m; sourceTree = "<group>"; };
 		95F2715C2255908900E0216B /* CodeDemoWeChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodeDemoWeChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		95F2715F2255908900E0216B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		95F271602255908900E0216B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -105,6 +115,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9513F9AD225AD42100C53CA6 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				9513F9B1225AD44000C53CA6 /* headers */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		9513F9AE225AD42600C53CA6 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				9513F9B5225ADA3A00C53CA6 /* CDUserInfoModel.h */,
+				9513F9B6225ADA3A00C53CA6 /* CDUserInfoModel.m */,
+				9513F9B9225ADBE400C53CA6 /* CDUserInfoManager.h */,
+				9513F9BA225ADBE400C53CA6 /* CDUserInfoManager.m */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		9513F9AF225AD42D00C53CA6 /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = controllers;
+			sourceTree = "<group>";
+		};
+		9513F9B1225AD44000C53CA6 /* headers */ = {
+			isa = PBXGroup;
+			children = (
+				9513F9B2225AD48200C53CA6 /* CDMineIconHeaderView.h */,
+				9513F9B3225AD48200C53CA6 /* CDMineIconHeaderView.m */,
+			);
+			name = headers;
+			sourceTree = "<group>";
+		};
 		95F271532255908900E0216B = {
 			isa = PBXGroup;
 			children = (
@@ -217,6 +262,9 @@
 		95F271892255976100E0216B /* mine */ = {
 			isa = PBXGroup;
 			children = (
+				9513F9AF225AD42D00C53CA6 /* controllers */,
+				9513F9AE225AD42600C53CA6 /* model */,
+				9513F9AD225AD42100C53CA6 /* views */,
 				95F271AB22559D2D00E0216B /* CDMineVC.h */,
 				95F271AC22559D2D00E0216B /* CDMineVC.m */,
 			);
@@ -241,6 +289,7 @@
 			children = (
 				95F2718F2255985300E0216B /* DefaultDefinitions.h */,
 				9513F46F2255AAFA006A1D90 /* CDDiyNames.h */,
+				9513F9B8225ADA4700C53CA6 /* CDModels.h */,
 			);
 			path = import;
 			sourceTree = "<group>";
@@ -463,6 +512,7 @@
 				95F271642255908900E0216B /* ViewController.m in Sources */,
 				95F271CE2255A1BE00E0216B /* CDBaseTableView.m in Sources */,
 				95F271B322559D6B00E0216B /* CDConnectVC.m in Sources */,
+				9513F9BB225ADBE400C53CA6 /* CDUserInfoManager.m in Sources */,
 				95F271C52255A03E00E0216B /* UIImage+CDAllCategories.m in Sources */,
 				95F271B922559D9300E0216B /* CDLoginVC.m in Sources */,
 				95F271AD22559D2D00E0216B /* CDMineVC.m in Sources */,
@@ -471,9 +521,11 @@
 				95F271BE22559EB300E0216B /* CDNaviViewController.m in Sources */,
 				95F271C122559EE600E0216B /* UIViewController+CDNavigationExtension.m in Sources */,
 				9513F4722255ABD4006A1D90 /* CDTabbarViewController.m in Sources */,
+				9513F9B7225ADA3A00C53CA6 /* CDUserInfoModel.m in Sources */,
 				95F271AA22559CEB00E0216B /* CDBaseViewController.m in Sources */,
 				95F271B022559D5400E0216B /* CDFindVC.m in Sources */,
 				95F2719522559A9E00E0216B /* NSString+AllCategories.m in Sources */,
+				9513F9B4225AD48200C53CA6 /* CDMineIconHeaderView.m in Sources */,
 				95F271B622559D7F00E0216B /* CDMessageVC.m in Sources */,
 				95F271612255908900E0216B /* AppDelegate.m in Sources */,
 			);

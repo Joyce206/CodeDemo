@@ -171,6 +171,18 @@
 
 #pragma mark  - action
 - (void)btnLoginClick:(UIButton *)sender {
+    CDUserInfoModel *model = [[CDUserInfoModel alloc] init];
+    model.user_id = @"Wjs-sjW";
+    model.user_barth = @"2019-04-08";
+    model.user_mail = @"294952341@qq.com";
+    model.user_phone = @"13333333333";
+    model.user_nickname = @"微微微笑OK";
+    model.user_autograph = @"";
+    model.user_pic = @"user_icon";
+    model.user_sex = @"女";
+    [model saveUserInfo];
+    [CDUserInfoManager sharedInstance].userInfo = model;
+    [CDUserInfoManager sharedInstance].isLogin = YES;
     AppDelegate *app = (AppDelegate *)[UIApplication sharedApplication].delegate;
     app.window.rootViewController = [[CDNaviViewController alloc] initWithRootViewController:[[CDTabbarViewController alloc] init]];
 }
