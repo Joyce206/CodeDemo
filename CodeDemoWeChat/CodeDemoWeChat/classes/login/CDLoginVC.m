@@ -172,7 +172,7 @@
 #pragma mark  - action
 - (void)btnLoginClick:(UIButton *)sender {
     CDUserInfoModel *model = [[CDUserInfoModel alloc] init];
-    model.user_id = @"Wjs-sjW";
+    model.user_id = @"QQ3303964768";
     model.user_barth = @"2019-04-08";
     model.user_mail = @"3303964768@qq.com";
     model.user_phone = @"13333333333";

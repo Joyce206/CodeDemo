@@ -209,7 +209,11 @@
         }
         if (indexPath.row == 1) {
             CDResetNameVC *controller = [[CDResetNameVC alloc] init];
-            [self.navigationController pushViewController:controller animated:YES];
+            CDNaviViewController *nav = [[CDNaviViewController alloc] initWithRootViewController:controller];
+            [self presentViewController:nav animated:YES completion:nil];
+            
+//            CDResetNameVC *controller = [[CDResetNameVC alloc] init];
+//            [self.navigationController pushViewController:controller animated:YES];
         }
         if (indexPath.row == 3) {
             CDResetQRCodeVC *controller = [[CDResetQRCodeVC alloc] init];
