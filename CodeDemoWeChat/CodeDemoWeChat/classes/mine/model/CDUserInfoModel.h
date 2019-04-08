@@ -30,6 +30,7 @@ NS_ASSUME_NONNULL_BEGIN
  */
 //+(instancetype)decodeUserInfo;
 
++(instancetype)getUserInfo;
 /**
  *  保存用户信息
  */

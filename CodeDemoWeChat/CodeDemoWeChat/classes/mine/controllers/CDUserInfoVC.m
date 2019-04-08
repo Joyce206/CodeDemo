@@ -8,6 +8,11 @@
 
 #import "CDUserInfoVC.h"
 #import "CDUserInfoMoreVC.h"
+#import "CDResetHeaderVC.h"
+#import "CDResetNameVC.h"
+#import "CDResetQRCodeVC.h"
+#import "CDMyAdressesVC.h"
+#import "CDResetAddressesVC.h"
 
 @interface CDUserInfoVC ()<UITableViewDelegate, UITableViewDataSource>
 @property (nonatomic, strong) CDBaseTableView *tableView;
@@ -27,8 +32,8 @@
     [self.navigationController setNavigationBarHidden:NO animated:YES];
     [self showBackButtonWithAction:nil];
     self.title = @"个人信息";
-    self.userInfo = [[CDUserInfoManager sharedInstance] userInfo];
-    
+
+    self.userInfo = [CDUserInfoModel getUserInfo] ;
     [self refreshUI];
     [self refreshUIConstraints];
     [self.tableView reloadData];
@@ -36,7 +41,6 @@
 - (void)refreshUI {
     [self tableView];
     [self.view addSubview:self.tableView];
-    [self.tableView reloadData];
 }
 - (void)refreshUIConstraints {
     [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -199,18 +203,29 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     if (indexPath.section == 0) {
+        if (indexPath.row == 0) {
+            CDResetHeaderVC *controller = [[CDResetHeaderVC alloc] init];
+            [self.navigationController pushViewController:controller animated:YES];
+        }
+        if (indexPath.row == 1) {
+            CDResetNameVC *controller = [[CDResetNameVC alloc] init];
+            [self.navigationController pushViewController:controller animated:YES];
+        }
+        if (indexPath.row == 3) {
+            CDResetQRCodeVC *controller = [[CDResetQRCodeVC alloc] init];
+            [self.navigationController pushViewController:controller animated:YES];
+        }
         if (indexPath.row == 4) {
             CDUserInfoMoreVC *controller = [[CDUserInfoMoreVC alloc] init];
             [self.navigationController pushViewController:controller animated:YES];
         }
     }
+    if (indexPath.section == 1) {
+        CDMyAdressesVC *controller = [[CDMyAdressesVC alloc] init];
+        [self.navigationController pushViewController:controller animated:YES];
+    }
 }
 #pragma mark  UITableViewDelegate, UITableViewDataSource
 
-#pragma mark  - action
-- (void)btnLoginClick:(UIButton *)sender {
-    //    AppDelegate *app = (AppDelegate *)[UIApplication sharedApplication].delegate;
-    //    app.window.rootViewController = [[CDNaviViewController alloc] initWithRootViewController:[[CDTabbarViewController alloc] init]];
-}
 
 @end

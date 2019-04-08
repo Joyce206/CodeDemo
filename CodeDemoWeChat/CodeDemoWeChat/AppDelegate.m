@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "CDTabbarViewController.h"
 #import "CDLoginVC.h"
 #import "CDNaviViewController.h"
 
@@ -19,11 +20,25 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    //状态栏默认亮色
+    [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleDefault;
+
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    CDLoginVC *controller = [[CDLoginVC alloc] init];
-    CDNaviViewController *nav = [[CDNaviViewController alloc] initWithRootViewController:controller];
-    self.window.rootViewController = nav;
-    [self.window makeKeyAndVisible];
+//    CDLoginVC *controller = [[CDLoginVC alloc] init];
+//    CDNaviViewController *nav = [[CDNaviViewController alloc] initWithRootViewController:controller];
+//    self.window.rootViewController = nav;
+//    [self.window makeKeyAndVisible];
+    if ( [CDUserInfoManager sharedInstance].isLogin == YES) {
+        CDTabbarViewController *controller = [[CDTabbarViewController alloc] init];
+        CDNaviViewController *nav = [[CDNaviViewController alloc] initWithRootViewController:controller];
+        self.window.rootViewController = nav;
+        [self.window makeKeyAndVisible];
+    }else {
+        CDLoginVC *controller = [[CDLoginVC alloc] init];
+        CDNaviViewController *nav = [[CDNaviViewController alloc] initWithRootViewController:controller];
+        self.window.rootViewController = nav;
+        [self.window makeKeyAndVisible];
+    }
 
     return YES;
 }

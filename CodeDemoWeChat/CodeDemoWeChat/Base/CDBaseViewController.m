@@ -24,13 +24,25 @@ static NSInteger offset = 10;
     if ([self.navigationController respondsToSelector:@selector(interactivePopGestureRecognizer)]) {
         self.navigationController.interactivePopGestureRecognizer.delegate = self;
     }
-    
+    [self setUpNavUI];
     [self setupUI];
 }
 - (UIStatusBarStyle)preferredStatusBarStyle {
     return UIStatusBarStyleLightContent;
 }
-
+- (void)setUpNavUI {
+    //子类重写该方法，导航栏样式UI
+    [self.navigationController.navigationBar setBackgroundImage:[UIImage imageWithSolidColor:Nav_BG_Color size:CGSizeMake(ScreenWidth, NavHeight)]
+                                                  forBarMetrics:UIBarMetricsDefault];
+    
+    [self.navigationController.navigationBar setShadowImage:[UIImage imageWithSolidColor:Nav_BG_Color size:CGSizeMake(ScreenWidth, 1)]];
+    
+    self.navigationController.navigationBar.tintColor = Nav_Title_Color;
+    self.navigationController.navigationBar.titleTextAttributes = @{
+                                                                    NSForegroundColorAttributeName: Nav_Title_Color,
+                                                                    NSFontAttributeName: [UIFont boldSystemFontOfSize:18]
+                                                                    };
+}
 - (void)setupUI {
     //子类重写该方法，布局UI
 }

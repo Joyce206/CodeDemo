@@ -17,6 +17,12 @@
 		9513F9C9225AEADB00C53CA6 /* CDResetNameVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9513F9C8225AEADB00C53CA6 /* CDResetNameVC.m */; };
 		9513F9CC225AEAF700C53CA6 /* CDResetQRCodeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9513F9CB225AEAF700C53CA6 /* CDResetQRCodeVC.m */; };
 		9513F9CF225AEB1600C53CA6 /* CDResetAddressesVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9513F9CE225AEB1600C53CA6 /* CDResetAddressesVC.m */; };
+		9513F9D2225AF4FF00C53CA6 /* CDResetSexVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9513F9D1225AF4FF00C53CA6 /* CDResetSexVC.m */; };
+		9513F9D5225AF51F00C53CA6 /* CDResetAddressVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9513F9D4225AF51F00C53CA6 /* CDResetAddressVC.m */; };
+		9513F9D8225AF53C00C53CA6 /* CDRestAutographVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9513F9D7225AF53C00C53CA6 /* CDRestAutographVC.m */; };
+		9513F9DE225AF5AC00C53CA6 /* CDMyAdressesVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9513F9DD225AF5AC00C53CA6 /* CDMyAdressesVC.m */; };
+		9513F9E2225B0EE000C53CA6 /* CDAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9513F9E1225B0EE000C53CA6 /* CDAlertView.m */; };
+		9513F9E5225B1F0000C53CA6 /* CDAlertSheetView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9513F9E4225B1F0000C53CA6 /* CDAlertSheetView.m */; };
 		95F271612255908900E0216B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 95F271602255908900E0216B /* AppDelegate.m */; };
 		95F271642255908900E0216B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95F271632255908900E0216B /* ViewController.m */; };
 		95F271692255908A00E0216B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95F271682255908A00E0216B /* Assets.xcassets */; };
@@ -73,6 +79,18 @@
 		9513F9CB225AEAF700C53CA6 /* CDResetQRCodeVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CDResetQRCodeVC.m; sourceTree = "<group>"; };
 		9513F9CD225AEB1600C53CA6 /* CDResetAddressesVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CDResetAddressesVC.h; sourceTree = "<group>"; };
 		9513F9CE225AEB1600C53CA6 /* CDResetAddressesVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CDResetAddressesVC.m; sourceTree = "<group>"; };
+		9513F9D0225AF4FF00C53CA6 /* CDResetSexVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CDResetSexVC.h; sourceTree = "<group>"; };
+		9513F9D1225AF4FF00C53CA6 /* CDResetSexVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CDResetSexVC.m; sourceTree = "<group>"; };
+		9513F9D3225AF51F00C53CA6 /* CDResetAddressVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CDResetAddressVC.h; sourceTree = "<group>"; };
+		9513F9D4225AF51F00C53CA6 /* CDResetAddressVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CDResetAddressVC.m; sourceTree = "<group>"; };
+		9513F9D6225AF53C00C53CA6 /* CDRestAutographVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CDRestAutographVC.h; sourceTree = "<group>"; };
+		9513F9D7225AF53C00C53CA6 /* CDRestAutographVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CDRestAutographVC.m; sourceTree = "<group>"; };
+		9513F9DC225AF5AC00C53CA6 /* CDMyAdressesVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CDMyAdressesVC.h; sourceTree = "<group>"; };
+		9513F9DD225AF5AC00C53CA6 /* CDMyAdressesVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CDMyAdressesVC.m; sourceTree = "<group>"; };
+		9513F9E0225B0EE000C53CA6 /* CDAlertView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CDAlertView.h; sourceTree = "<group>"; };
+		9513F9E1225B0EE000C53CA6 /* CDAlertView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CDAlertView.m; sourceTree = "<group>"; };
+		9513F9E3225B1F0000C53CA6 /* CDAlertSheetView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CDAlertSheetView.h; sourceTree = "<group>"; };
+		9513F9E4225B1F0000C53CA6 /* CDAlertSheetView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CDAlertSheetView.m; sourceTree = "<group>"; };
 		95F2715C2255908900E0216B /* CodeDemoWeChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodeDemoWeChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		95F2715F2255908900E0216B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		95F271602255908900E0216B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -155,6 +173,7 @@
 		9513F9AF225AD42D00C53CA6 /* controllers */ = {
 			isa = PBXGroup;
 			children = (
+				9513F9DB225AF59B00C53CA6 /* address */,
 				9513F9C3225AEAAC00C53CA6 /* reset */,
 				9513F9BF225AEA7F00C53CA6 /* userInfo */,
 			);
@@ -184,6 +203,15 @@
 		9513F9C3225AEAAC00C53CA6 /* reset */ = {
 			isa = PBXGroup;
 			children = (
+				9513F9DA225AF54800C53CA6 /* pop */,
+				9513F9D9225AF54500C53CA6 /* push */,
+			);
+			name = reset;
+			sourceTree = "<group>";
+		};
+		9513F9D9225AF54500C53CA6 /* push */ = {
+			isa = PBXGroup;
+			children = (
 				9513F9C4225AEAC600C53CA6 /* CDResetHeaderVC.h */,
 				9513F9C5225AEAC600C53CA6 /* CDResetHeaderVC.m */,
 				9513F9C7225AEADB00C53CA6 /* CDResetNameVC.h */,
@@ -193,7 +221,40 @@
 				9513F9CD225AEB1600C53CA6 /* CDResetAddressesVC.h */,
 				9513F9CE225AEB1600C53CA6 /* CDResetAddressesVC.m */,
 			);
-			name = reset;
+			name = push;
+			sourceTree = "<group>";
+		};
+		9513F9DA225AF54800C53CA6 /* pop */ = {
+			isa = PBXGroup;
+			children = (
+				9513F9D0225AF4FF00C53CA6 /* CDResetSexVC.h */,
+				9513F9D1225AF4FF00C53CA6 /* CDResetSexVC.m */,
+				9513F9D3225AF51F00C53CA6 /* CDResetAddressVC.h */,
+				9513F9D4225AF51F00C53CA6 /* CDResetAddressVC.m */,
+				9513F9D6225AF53C00C53CA6 /* CDRestAutographVC.h */,
+				9513F9D7225AF53C00C53CA6 /* CDRestAutographVC.m */,
+			);
+			name = pop;
+			sourceTree = "<group>";
+		};
+		9513F9DB225AF59B00C53CA6 /* address */ = {
+			isa = PBXGroup;
+			children = (
+				9513F9DC225AF5AC00C53CA6 /* CDMyAdressesVC.h */,
+				9513F9DD225AF5AC00C53CA6 /* CDMyAdressesVC.m */,
+			);
+			name = address;
+			sourceTree = "<group>";
+		};
+		9513F9DF225B0ECF00C53CA6 /* alert */ = {
+			isa = PBXGroup;
+			children = (
+				9513F9E0225B0EE000C53CA6 /* CDAlertView.h */,
+				9513F9E1225B0EE000C53CA6 /* CDAlertView.m */,
+				9513F9E3225B1F0000C53CA6 /* CDAlertSheetView.h */,
+				9513F9E4225B1F0000C53CA6 /* CDAlertSheetView.m */,
+			);
+			path = alert;
 			sourceTree = "<group>";
 		};
 		95F271532255908900E0216B = {
@@ -343,6 +404,7 @@
 		95F2719122559A6E00E0216B /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				9513F9DF225B0ECF00C53CA6 /* alert */,
 				95F2719222559A7700E0216B /* Category */,
 			);
 			path = Helpers;
@@ -557,6 +619,7 @@
 			files = (
 				95F271642255908900E0216B /* ViewController.m in Sources */,
 				95F271CE2255A1BE00E0216B /* CDBaseTableView.m in Sources */,
+				9513F9E2225B0EE000C53CA6 /* CDAlertView.m in Sources */,
 				95F271B322559D6B00E0216B /* CDConnectVC.m in Sources */,
 				9513F9BB225ADBE400C53CA6 /* CDUserInfoManager.m in Sources */,
 				9513F9BE225AEA7500C53CA6 /* CDUserInfoVC.m in Sources */,
@@ -572,14 +635,19 @@
 				9513F9B7225ADA3A00C53CA6 /* CDUserInfoModel.m in Sources */,
 				95F271AA22559CEB00E0216B /* CDBaseViewController.m in Sources */,
 				95F271B022559D5400E0216B /* CDFindVC.m in Sources */,
+				9513F9E5225B1F0000C53CA6 /* CDAlertSheetView.m in Sources */,
 				95F2719522559A9E00E0216B /* NSString+AllCategories.m in Sources */,
 				9513F9C9225AEADB00C53CA6 /* CDResetNameVC.m in Sources */,
 				9513F9CF225AEB1600C53CA6 /* CDResetAddressesVC.m in Sources */,
+				9513F9D5225AF51F00C53CA6 /* CDResetAddressVC.m in Sources */,
+				9513F9D2225AF4FF00C53CA6 /* CDResetSexVC.m in Sources */,
+				9513F9DE225AF5AC00C53CA6 /* CDMyAdressesVC.m in Sources */,
 				9513F9B4225AD48200C53CA6 /* CDMineIconHeaderView.m in Sources */,
 				95F271B622559D7F00E0216B /* CDMessageVC.m in Sources */,
 				9513F9CC225AEAF700C53CA6 /* CDResetQRCodeVC.m in Sources */,
 				9513F9C6225AEAC600C53CA6 /* CDResetHeaderVC.m in Sources */,
 				95F271612255908900E0216B /* AppDelegate.m in Sources */,
+				9513F9D8225AF53C00C53CA6 /* CDRestAutographVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

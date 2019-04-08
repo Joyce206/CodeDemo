@@ -27,7 +27,8 @@
     [self.navigationController setNavigationBarHidden:YES animated:YES];
     
     self.title = @"登录";
-    self.userInfo = [[CDUserInfoManager sharedInstance] userInfo];
+
+    self.userInfo = [CDUserInfoModel getUserInfo] ;
 
     [self refreshUI];
     [self refreshUIConstraints];

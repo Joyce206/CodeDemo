@@ -32,5 +32,4 @@
 - (BOOL)isLogin {
     return [UserDefaults boolForKey:@"isLogin"];
 }
-
 @end

@@ -7,6 +7,10 @@
 //
 
 #import "CDUserInfoMoreVC.h"
+#import "CDResetSexVC.h"
+#import "CDResetAddressVC.h"
+#import "CDRestAutographVC.h"
+
 
 @interface CDUserInfoMoreVC ()<UITableViewDelegate, UITableViewDataSource>
 @property (nonatomic, strong) CDBaseTableView *tableView;
@@ -24,8 +28,8 @@
 - (void)setupUI {
     [self.navigationController setNavigationBarHidden:NO animated:YES];
     [self showBackButtonWithAction:nil];
-    self.userInfo = [[CDUserInfoManager sharedInstance] userInfo];
-    
+    self.userInfo = [CDUserInfoModel getUserInfo] ;
+
     [self refreshUI];
     [self refreshUIConstraints];
     [self.tableView reloadData];
@@ -155,10 +159,23 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     if (indexPath.section == 0) {
-//        if (indexPath.row == 4) {
-//            CDUserInfoMoreVC *controller = [[CDUserInfoMoreVC alloc] init];
+        if (indexPath.row == 0) {
+            CDResetSexVC *controller = [[CDResetSexVC alloc] init];
+            [self presentViewController:controller animated:YES completion:nil];
+        }
+        if (indexPath.row == 2) {
+            CDRestAutographVC *controller = [[CDRestAutographVC alloc] init];
+            [self presentViewController:controller animated:YES completion:nil];
+        }
+        if (indexPath.row == 1) {
+            CDResetAddressVC *controller = [[CDResetAddressVC alloc] init];
+            CDNaviViewController *nav = [[CDNaviViewController alloc] initWithRootViewController:controller];
+
 //            [self.navigationController pushViewController:controller animated:YES];
-//        }
+            [self presentViewController:nav animated:YES completion:nil];
+
+        }
+
     }
 }
 #pragma mark  UITableViewDelegate, UITableViewDataSource
