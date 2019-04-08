@@ -20,6 +20,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, copy) NSString *_Nullable user_autograph; //签名
 @property (nonatomic, copy) NSString *_Nullable user_pic;//头像
 @property (nonatomic, copy) NSString *_Nullable user_sex;//性别
+@property (nonatomic, copy) NSString *_Nullable user_address;//性别
 
 
 + (instancetype)sharedInstance;

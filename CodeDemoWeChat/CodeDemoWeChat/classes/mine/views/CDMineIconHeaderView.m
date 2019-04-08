@@ -23,6 +23,8 @@
 
 @property (nonatomic, strong) UIView *botttomLine;
 
+@property (nonatomic, strong) UIButton *userInfoBtn;
+
 @end
 @implementation CDMineIconHeaderView
 
@@ -53,6 +55,9 @@
         [self rightImg];
         [self.centerView addSubview:self.rightImg];
         
+        [self userInfoBtn];
+        [self.centerView addSubview:self.userInfoBtn];
+
         [self botttomLine];
         [self addSubview:self.botttomLine];
     }
@@ -120,12 +125,25 @@
     }
     return _photoBtn;
 }
+- (UIButton *)userInfoBtn {
+    if (!_userInfoBtn) {
+        _userInfoBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+        [_userInfoBtn addTarget:self action:@selector(userInfoBtnClick:) forControlEvents:UIControlEventTouchUpInside];
+    }
+    return _userInfoBtn;
+}
+
 - (UIView *)botttomLine {
     if (!_botttomLine) {
         _botttomLine = [[UIView alloc] init];
         _botttomLine.backgroundColor = Table_footer_Color;
     }
     return _botttomLine;
+}
+- (void)userInfoBtnClick:(UIButton *)sender {
+    if (self.clickBlock) {
+        self.clickBlock(1);
+    }
 }
 - (void)photoBtnClick:(UIButton *)sender {
     if (self.clickBlock) {
@@ -157,9 +175,11 @@
         make.height.mas_equalTo(MarginTop);
     }];
     [self.photoBtn mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.size.mas_equalTo(CGSizeMake(60, 40));
+//        make.size.mas_equalTo(CGSizeMake(60, 40));
         make.top.mas_equalTo(MarginTop);
         make.right.mas_equalTo(-20);
+        make.height.mas_equalTo(40);
+        make.centerX.mas_equalTo(self);
     }];
     
     [self.centerView mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -167,6 +187,7 @@
         make.top.mas_equalTo(self.photoBtn.mas_bottom);
         make.bottom.mas_equalTo(self.botttomLine.mas_top);
     }];
+
     [self.rightImg mas_makeConstraints:^(MASConstraintMaker *make) {
         make.size.mas_equalTo(CGSizeMake(30, 30));
         make.centerY.mas_equalTo(self.centerView);
@@ -184,7 +205,11 @@
     [self.qrImg mas_makeConstraints:^(MASConstraintMaker *make) {
         make.centerY.mas_equalTo(self.rightImg);
         make.right.mas_equalTo(self.rightImg.mas_left).offset(-10);
-        make.width.height.mas_equalTo(CGSizeMake(12*4, 10*4));
+        make.width.height.mas_equalTo(CGSizeMake(40, 40));
+    }];
+    [self.userInfoBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.bottom.left.right.mas_equalTo(self.centerView);
+        make.top.mas_equalTo(self.headerImg.mas_top);
     }];
     [self.namelab mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.mas_equalTo(self.headerImg.mas_top);
