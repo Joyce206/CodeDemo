@@ -23,8 +23,8 @@
 		9513F9DE225AF5AC00C53CA6 /* CDMyAdressesVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9513F9DD225AF5AC00C53CA6 /* CDMyAdressesVC.m */; };
 		9534058F225C2768009B9867 /* CDAlertSheetView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9534058B225C2767009B9867 /* CDAlertSheetView.m */; };
 		95340590225C2768009B9867 /* CDAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9534058C225C2768009B9867 /* CDAlertView.m */; };
-		95700F0F225D843A00A172A3 /* IJKMediaFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95700F0E225D843A00A172A3 /* IJKMediaFramework.framework */; };
 		95700F11225D844400A172A3 /* libstdc++.6.0.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 95700F10225D844400A172A3 /* libstdc++.6.0.9.tbd */; };
+		95700F22225DF18A00A172A3 /* CDVideoPlayVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 95700F21225DF18A00A172A3 /* CDVideoPlayVC.m */; };
 		95F271612255908900E0216B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 95F271602255908900E0216B /* AppDelegate.m */; };
 		95F271642255908900E0216B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95F271632255908900E0216B /* ViewController.m */; };
 		95F271692255908A00E0216B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95F271682255908A00E0216B /* Assets.xcassets */; };
@@ -94,8 +94,9 @@
 		9534058C225C2768009B9867 /* CDAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDAlertView.m; sourceTree = "<group>"; };
 		9534058D225C2768009B9867 /* CDAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDAlertView.h; sourceTree = "<group>"; };
 		9534058E225C2768009B9867 /* CDAlertSheetView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDAlertSheetView.h; sourceTree = "<group>"; };
-		95700F0E225D843A00A172A3 /* IJKMediaFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IJKMediaFramework.framework; sourceTree = "<group>"; };
 		95700F10225D844400A172A3 /* libstdc++.6.0.9.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.6.0.9.tbd"; path = "usr/lib/libstdc++.6.0.9.tbd"; sourceTree = SDKROOT; };
+		95700F20225DF18A00A172A3 /* CDVideoPlayVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CDVideoPlayVC.h; sourceTree = "<group>"; };
+		95700F21225DF18A00A172A3 /* CDVideoPlayVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CDVideoPlayVC.m; sourceTree = "<group>"; };
 		95F2715C2255908900E0216B /* CodeDemoWeChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodeDemoWeChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		95F2715F2255908900E0216B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		95F271602255908900E0216B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -146,7 +147,6 @@
 			files = (
 				95700F11225D844400A172A3 /* libstdc++.6.0.9.tbd in Frameworks */,
 				CBCEFD51D5C299ECCF740FF7 /* libPods-CodeDemoWeChat.a in Frameworks */,
-				95700F0F225D843A00A172A3 /* IJKMediaFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,10 +267,18 @@
 			path = alert;
 			sourceTree = "<group>";
 		};
-		95700F0D225D842200A172A3 /* frameworks */ = {
+		95700F1F225DF17100A172A3 /* video */ = {
 			isa = PBXGroup;
 			children = (
-				95700F0E225D843A00A172A3 /* IJKMediaFramework.framework */,
+				95700F20225DF18A00A172A3 /* CDVideoPlayVC.h */,
+				95700F21225DF18A00A172A3 /* CDVideoPlayVC.m */,
+			);
+			path = video;
+			sourceTree = "<group>";
+		};
+		95700F28225DF2AE00A172A3 /* frameworks */ = {
+			isa = PBXGroup;
+			children = (
 			);
 			path = frameworks;
 			sourceTree = "<group>";
@@ -298,7 +306,7 @@
 		95F2715E2255908900E0216B /* CodeDemoWeChat */ = {
 			isa = PBXGroup;
 			children = (
-				95700F0D225D842200A172A3 /* frameworks */,
+				95700F28225DF2AE00A172A3 /* frameworks */,
 				95F2719122559A6E00E0216B /* Helpers */,
 				95F2718E2255983A00E0216B /* import */,
 				95F2718A2255979000E0216B /* Base */,
@@ -328,6 +336,7 @@
 		95F271832255958D00E0216B /* classes */ = {
 			isa = PBXGroup;
 			children = (
+				95700F1F225DF17100A172A3 /* video */,
 				95F271892255976100E0216B /* mine */,
 				95F271882255975B00E0216B /* find */,
 				95F271872255975200E0216B /* connect */,
@@ -673,6 +682,7 @@
 				9513F9DE225AF5AC00C53CA6 /* CDMyAdressesVC.m in Sources */,
 				9513F9B4225AD48200C53CA6 /* CDMineIconHeaderView.m in Sources */,
 				95F271B622559D7F00E0216B /* CDMessageVC.m in Sources */,
+				95700F22225DF18A00A172A3 /* CDVideoPlayVC.m in Sources */,
 				9513F9CC225AEAF700C53CA6 /* CDResetQRCodeVC.m in Sources */,
 				9513F9C6225AEAC600C53CA6 /* CDResetHeaderVC.m in Sources */,
 				95F271612255908900E0216B /* AppDelegate.m in Sources */,
